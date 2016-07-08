@@ -1,0 +1,17 @@
+(in-package "USER")
+
+(loadinvar 'invardef
+'(
+  la ((le cat art type def classe (0) gender f number sing)
+      (le cat pron type pers classe (0) gender f number sing case (lobj)))
+  mon ((mon cat adj type poss posspers 1 possnumb sing gender m number sing))
+  ma ((mon cat adj type poss posspers 1 possnumb sing gender f number sing))
+  mes ((mon cat adj type poss posspers 1 possnumb sing gender allval number pl))
+  son ((son cat adj type poss posspers 3 possnumb sing gender m number sing))
+  sa ((son cat adj type poss posspers 3 possnumb sing gender f number sing))
+  ses ((son cat adj type poss posspers 3 possnumb sing gender allval number pl))
+  ton ((ton cat adj type poss posspers 2 possnumb sing gender m number sing))
+  ta ((ton cat adj type poss posspers 2 possnumb sing gender f number sing))
+  tes ((ton cat adj type poss posspers 2 possnumb sing gender allval number pl))
+	  ))
+

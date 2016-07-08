@@ -1,0 +1,21 @@
+; ££££££££££££££££££££ 
+;  This file lists, for each verb, its subcategorization classes
+
+(in-package "USER")
+
+; *** set-verbal-classes defined in PROC/subc-hier
+(set-verbal-classes
+		'(
+                 (devoir (modal basic-trans))
+                 (être (intrans-time intrans-pred
+                        doubt-be-verbs intrans-loc-indef intrans-loc
+                        intrans-on intrans-with intrans-pred-prep
+                        intrans-num intrans-so intrans-that-to intrans-to-2
+                        intrans-loc-metaph intrans-pred-che intrans-partitive
+                       ))
+		  (no (grempty))
+		  (ok (grempty))
+		  (oui (grempty))
+                  (pouvoir (modal basic-trans))
+		  ))
+

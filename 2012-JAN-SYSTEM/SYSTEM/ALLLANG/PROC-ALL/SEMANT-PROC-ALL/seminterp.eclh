@@ -1,0 +1,397 @@
+
+#ifdef ECL_DYNAMIC_VV
+static cl_object *VV;
+#else
+static cl_object VV[VM];
+#endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+static cl_object L1semantic_interpretation(cl_narg, cl_object , ...);
+#define VT2 cl_object T0,T1,T2,T3,T4;
+#define VLEX2
+#define CLSR2
+#define STCK2
+static cl_object L2file_sem_interp(cl_object volatile , cl_object volatile , cl_object volatile , cl_object volatile , cl_object volatile );
+#define VT3 cl_object T0;
+#define VLEX3
+#define CLSR3
+#define STCK3
+static cl_object L3seminterp_from_string(cl_object );
+#define VT4 cl_object T0;
+#define VLEX4
+#define CLSR4
+#define STCK4
+static cl_object L4singsent_sem_interp(volatile cl_narg, cl_object volatile , ...);
+#define VT5 cl_object T0,T1;
+#define VLEX5
+#define CLSR5
+#define STCK5
+static cl_object L5annotate(cl_object );
+#define VT6 cl_object T0,T1;
+#define VLEX6
+#define CLSR6
+#define STCK6
+static cl_object L6get_sentential_object(cl_object );
+#define VT7 cl_object T0;
+#define VLEX7
+#define CLSR7
+#define STCK7
+static cl_object L7is_a_actavm_noun_complex(cl_object );
+#define VT8
+#define VLEX8
+#define CLSR8
+#define STCK8
+static cl_object L8get_standard_object(cl_object );
+#define VT9
+#define VLEX9
+#define CLSR9
+#define STCK9
+static cl_object L9get_preposition_arg(cl_object );
+#define VT10
+#define VLEX10
+#define CLSR10
+#define STCK10
+static cl_object L10make_lexmean(cl_object );
+#define VT11 cl_object T0;
+#define VLEX11
+#define CLSR11
+#define STCK11
+static cl_object L11add_givinfo(cl_object , cl_object );
+#define VT12 cl_object T0,T1,T2,T3;
+#define VLEX12
+#define CLSR12
+#define STCK12
+static cl_object L12add_getinfo(cl_object );
+#define VT13
+#define VLEX13
+#define CLSR13
+#define STCK13
+static cl_object L13add_want_know(cl_object );
+#define VT14
+#define VLEX14
+#define CLSR14
+#define STCK14
+static cl_object L14add_want(cl_object );
+#define VT15
+#define VLEX15
+#define CLSR15
+#define STCK15
+static cl_object L15add_want_obj(cl_object );
+#define VT16
+#define VLEX16
+#define CLSR16
+#define STCK16
+static cl_object L16adjoin_subtree(cl_object , cl_object );
+#define VT17 cl_object T0,T1,T2,T3,T4,T5;
+#define VLEX17
+#define CLSR17
+#define STCK17
+static cl_object L17replace_dependent(cl_object , cl_object , cl_object , cl_object , cl_object , cl_object );
+#define VT18 cl_object T0,T1,T2,T3,T4,T5,T6,T7,T8,T9;
+#define VLEX18
+#define CLSR18
+#define STCK18
+static cl_object L18expand_adjoin_tree(cl_object , cl_object , cl_object , cl_object , cl_object );
+#define VT19
+#define VLEX19
+#define CLSR19
+#define STCK19
+static cl_object L19int_expand_adjoin_tree(cl_object , cl_object , cl_object , cl_object );
+#define VT20 cl_object T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15;
+#define VLEX20
+#define CLSR20
+#define STCK20
+static cl_object L20attach_subtree(cl_object , cl_object );
+#define VT21 cl_object T0,T1,T2,T3,T4,T5;
+#define VLEX21
+#define CLSR21
+#define STCK21
+static cl_object L21attach_dependent(cl_object , cl_object , cl_object , cl_object );
+#define VT22 cl_object T0,T1,T2,T3,T4,T5,T6,T7,T8;
+#define VLEX22
+#define CLSR22
+#define STCK22
+static cl_object L22skip_traces_and_expand(cl_object , cl_object , cl_object , cl_object );
+#define VT23 cl_object T0,T1,T2,T3,T4,T5;
+#define VLEX23
+#define CLSR23
+#define STCK23
+static cl_object L23expand_tree(cl_object , cl_object , cl_object );
+#define VT24 cl_object T0,T1;
+#define VLEX24
+#define CLSR24
+#define STCK24
+static cl_object L24int_expand_tree(cl_object , cl_object );
+#define VT25 cl_object T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15;
+#define VLEX25
+#define CLSR25
+#define STCK25
+static cl_object L25add_actavm_headmeaning(cl_object , cl_object );
+#define VT26 cl_object T0,T1,T2;
+#define VLEX26
+#define CLSR26
+#define STCK26
+static cl_object L26enclosed_in_quotes(cl_object );
+#define VT27 cl_object T0;
+#define VLEX27
+#define CLSR27
+#define STCK27
+static cl_object L27add_head_wordmeaning(cl_object , cl_object , cl_object , cl_object );
+#define VT28 cl_object T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10;
+#define VLEX28
+#define CLSR28
+#define STCK28
+static cl_object L28get_word_meaning(cl_narg, cl_object , cl_object , cl_object , cl_object , ...);
+#define VT29 cl_object T0,T1,T2,T3;
+#define VLEX29
+#define CLSR29
+#define STCK29
+static cl_object L29choose_best_grid(cl_object , cl_object );
+#define VT30 cl_object T0,T1,T2;
+#define VLEX30
+#define CLSR30
+#define STCK30
+static cl_object L30them_grid_match(cl_object , cl_object );
+#define VT31 cl_object T0,T1;
+#define VLEX31
+#define CLSR31
+#define STCK31
+static cl_object L31search_grid_element(cl_object , cl_object , cl_object );
+#define VT32 cl_object T0;
+#define VLEX32
+#define CLSR32
+#define STCK32
+static cl_object L32feature_based_disamb(cl_object , cl_object , cl_object , cl_object );
+#define VT33 cl_object T0;
+#define VLEX33
+#define CLSR33
+#define STCK33
+static cl_object L33get_last_anaph_ref(cl_object , cl_object );
+#define VT34
+#define VLEX34
+#define CLSR34
+#define STCK34
+static cl_object L34check_anaph_last_turn(cl_object , cl_object , cl_object );
+#define VT35 cl_object T0,T1;
+#define VLEX35
+#define CLSR35
+#define STCK35
+static cl_object L35find_anaph_in_tree(cl_object , cl_object , cl_object , cl_object );
+#define VT36 cl_object T0,T1;
+#define VLEX36
+#define CLSR36
+#define STCK36
+static cl_object L36solve_coreferences(cl_object , cl_object , cl_object );
+#define VT37 cl_object T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14;
+#define VLEX37
+#define CLSR37
+#define STCK37
+static cl_object L37find_coreferent(cl_object , cl_object );
+#define VT38 cl_object T0,T1;
+#define VLEX38
+#define CLSR38
+#define STCK38
+static cl_object L38subst_sem_val(cl_object , cl_object );
+#define VT39 cl_object T0,T1,T2;
+#define VLEX39
+#define CLSR39
+#define STCK39
+static cl_object L39subst_syn_val(cl_object , cl_object , cl_object );
+#define VT40 cl_object T0,T1,T2;
+#define VLEX40
+#define CLSR40
+#define STCK40
+static cl_object L40subst_head_val(cl_object , cl_object , cl_object );
+#define VT41 cl_object T0,T1,T2;
+#define VLEX41
+#define CLSR41
+#define STCK41
+static cl_object L41get_leftmost_item(cl_object );
+#define VT42 cl_object T0;
+#define VLEX42
+#define CLSR42
+#define STCK42
+static cl_object L42find_verb_person_or_number(cl_object , cl_object );
+#define VT43 cl_object T0;
+#define VLEX43
+#define CLSR43
+#define STCK43
+static cl_object L43skip_determiner(cl_narg, cl_object , ...);
+#define VT44 cl_object T0,T1;
+#define VLEX44
+#define CLSR44
+#define STCK44
+static cl_object L44single_skip_determiner(cl_object );
+#define VT45
+#define VLEX45
+#define CLSR45
+#define STCK45
+static cl_object L45skip_question_tense_marker(cl_object );
+#define VT46 cl_object T0;
+#define VLEX46
+#define CLSR46
+#define STCK46
+static cl_object L46is_sem_interrogative(cl_object );
+#define VT47 cl_object T0,T1;
+#define VLEX47
+#define CLSR47
+#define STCK47
+static cl_object L47there_inversion(cl_object );
+#define VT48 cl_object T0;
+#define VLEX48
+#define CLSR48
+#define STCK48
+static cl_object L48read_actavm_sent(cl_object , cl_object , cl_object );
+#define VT49 cl_object T0,T1,T2,T3;
+#define VLEX49
+#define CLSR49
+#define STCK49
+static cl_object L49read_t_s_int(cl_object , cl_object , cl_object );
+#define VT50 cl_object T0,T1;
+#define VLEX50
+#define CLSR50
+#define STCK50
+static cl_object L50get_printable_tree_form(cl_object );
+extern cl_object si_coerce_to_vector(cl_object,cl_object,cl_object,cl_object);
+#define VT51 cl_object T0;
+#define VLEX51
+#define CLSR51
+#define STCK51
+static cl_object L51simplify_onto_repr(cl_object );
+#define VT52 cl_object T0,T1;
+#define VLEX52
+#define CLSR52
+#define STCK52
+static cl_object L52is_simple_onto_item(cl_object );
+#define VT53 cl_object T0;
+#define VLEX53
+#define CLSR53
+#define STCK53
+static cl_object L53act_simplify_onto(cl_object );
+#define VT54 cl_object T0,T1;
+#define VLEX54
+#define CLSR54
+#define STCK54
+static cl_object L54compose_and_repr(cl_object );
+#define VT55 cl_object T0,T1,T2,T3;
+#define VLEX55
+#define CLSR55
+#define STCK55
+static cl_object L55merge_all_starts(cl_object );
+#define VT56 cl_object T0;
+#define VLEX56
+#define CLSR56
+#define STCK56
+static cl_object L56insert_no_dupl_with_subsumption(cl_object , cl_object );
+#define VT57 cl_object T0,T1,T2,T3;
+#define VLEX57
+#define CLSR57
+#define STCK57
+static cl_object L57find_best_start(cl_object , cl_object );
+#define VT58 cl_object T0;
+#define VLEX58
+#define CLSR58
+#define STCK58
+static cl_object L58find_start_equiv(cl_object , cl_object );
+#define VT59 cl_object T0,T1;
+#define VLEX59
+#define CLSR59
+#define STCK59
+static cl_object L59group_same_start(cl_object , cl_object , cl_object );
+#define VT60 cl_object T0,T1,T2,T3,T4,T5,T6;
+#define VLEX60
+#define CLSR60
+#define STCK60
+static cl_object L60equiv_equal(cl_object , cl_object , cl_object );
+#define VT61 cl_object T0;
+#define VLEX61
+#define CLSR61
+#define STCK61
+static cl_object L61remove_upper_classes(cl_object );
+#define VT62 cl_object T0,T1,T2,T3,T4;
+#define VLEX62
+#define CLSR62
+#define STCK62
+static cl_object L62old_remove_upper_classes(cl_object , cl_object );
+#define VT63 cl_object T0,T1,T2,T3,T4,T5;
+#define VLEX63
+#define CLSR63
+#define STCK63
+static cl_object L63shorten_loops(cl_object , cl_object , cl_object );
+#define VT64 cl_object T0,T1,T2,T3,T4,T5,T6;
+#define VLEX64
+#define CLSR64
+#define STCK64
+static cl_object L64flatten_all_ands(cl_object , cl_object );
+#define VT65 cl_object T0,T1,T2,T3;
+#define VLEX65
+#define CLSR65
+#define STCK65
+static cl_object L65flat_append1(cl_object , cl_object );
+#define VT66 cl_object T0,T1;
+#define VLEX66
+#define CLSR66
+#define STCK66
+static cl_object L66flat_cons(cl_object , cl_object );
+#define VT67 cl_object T0,T1;
+#define VLEX67
+#define CLSR67
+#define STCK67
+static cl_object L67int_fl_all_ands(cl_object );
+#define VT68 cl_object T0,T1,T2;
+#define VLEX68
+#define CLSR68
+#define STCK68
+static cl_object L68check_revpath(cl_object );
+#define VT69 cl_object T0;
+#define VLEX69
+#define CLSR69
+#define STCK69
+static cl_object L69remove_rev_path(cl_object , cl_object );
+#define VT70 cl_object T0,T1;
+#define VLEX70
+#define CLSR70
+#define STCK70
+static cl_object L70pathsymmetric(cl_object , cl_object , cl_object );
+#define VT71 cl_object T0,T1,T2,T3;
+#define VLEX71
+#define CLSR71
+#define STCK71
+static cl_object L71all_has_subclass(cl_object );
+#define VT72 cl_object T0,T1;
+#define VLEX72
+#define CLSR72
+#define STCK72
+static cl_object L72find_same_beg_start(cl_object , cl_object , cl_object , cl_object );
+#define VT73 cl_object T0,T1,T2;
+#define VLEX73
+#define CLSR73
+#define STCK73
+static cl_object L73include_non_relational(cl_object );
+#define VT74 cl_object T0;
+#define VLEX74
+#define CLSR74
+#define STCK74
+static cl_object L74flatten_second_and(cl_object , cl_object );
+#define VT75 cl_object T0,T1;
+#define VLEX75
+#define CLSR75
+#define STCK75
+static cl_object L75non_single_rest(cl_object );
+#define VT76
+#define VLEX76
+#define CLSR76
+#define STCK76
+static cl_object L76list_non_single(cl_object , cl_object );
+#define VT77 cl_object T0;
+#define VLEX77
+#define CLSR77
+#define STCK77
+static cl_object L77remove_inner_ands(cl_object );
+#define VT78 cl_object T0,T1,T2,T3,T4;
+#define VLEX78
+#define CLSR78
+#define STCK78
+static cl_object L78remove_up_down(cl_object );

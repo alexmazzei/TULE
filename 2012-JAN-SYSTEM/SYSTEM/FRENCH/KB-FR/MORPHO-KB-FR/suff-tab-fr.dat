@@ -1,0 +1,2223 @@
+; *** This table associates with each suffix the categories, class codes, and features that it identifies
+( 
+@EMPT 
+  ( 
+  ADV 
+    (0)
+  ADJ 
+    ( 
+     0 (GENDER ALLVAL NUMBER ALLVAL) 
+     1 (GENDER ALLVAL NUMBER SING) 
+     2 (GENDER M NUMBER SING) 
+     3 (NUMBER ALLVAL GENDER M) 
+     4 (NUMBER ALLVAL GENDER M) 
+     5 (GENDER M NUMBER SING) 
+     6 (GENDER M NUMBER SING) 
+     7 (GENDER M NUMBER SING) 
+     16 (GENDER M NUMBER SING) 
+     24 (GENDER M NUMBER SING) 
+    ) 
+  NOUN 
+    ( 
+     1 (GENDER F NUMBER SING) 
+     2 (GENDER M NUMBER SING) 
+     7 (GENDER M NUMBER SING) 
+     10 (GENDER M NUMBER SING) 
+    ) 
+  VERB 
+    ( 
+     7 (A (3) )
+    ) 
+  ) 
+|ment| 
+  ( 
+  ADV 
+    (1)
+  ) 
+|nement| 
+  ( 
+  ADV 
+    (2)
+  ) 
+|ement| 
+  ( 
+  ADV 
+    (3)
+  ) 
+|sement| 
+  ( 
+  ADV 
+    (4)
+  ) 
+|hement| 
+  ( 
+  ADV 
+    (5)
+  ) 
+|ssement| 
+  ( 
+  ADV 
+    (6)
+  ) 
+|cement| 
+  ( 
+  ADV 
+    (7)
+  ) 
+|ètement| 
+  ( 
+  ADV 
+    (8)
+  ) 
+|èrement| 
+  ( 
+  ADV 
+    (9)
+  ) 
+|quement| 
+  ( 
+  ADV 
+    (10)
+  ) 
+|lement| 
+  ( 
+  ADV 
+    (11)
+  ) 
+|nellement| 
+  ( 
+  ADV 
+    (12)
+  ) 
+|alement| 
+  ( 
+  ADV 
+    (13)
+  ) 
+|llement| 
+  ( 
+  ADV 
+    (14)
+  ) 
+|iblement| 
+  ( 
+  ADV 
+    (15)
+  ) 
+|ablement| 
+  ( 
+  ADV 
+    (16)
+  ) 
+|uement| 
+  ( 
+  ADV 
+    (17)
+  ) 
+|ivement| 
+  ( 
+  ADV 
+    (18)
+  ) 
+|s| 
+  ( 
+  ADJ 
+    ( 
+     1 (GENDER ALLVAL NUMBER PL) 
+     2 (GENDER M NUMBER PL) 
+     5 (GENDER M NUMBER PL) 
+     6 (GENDER M NUMBER PL) 
+     7 (GENDER M NUMBER PL) 
+     16 (GENDER M NUMBER PL) 
+     24 (GENDER M NUMBER PL) 
+    ) 
+  NOUN 
+    ( 
+     1 (GENDER F NUMBER PL) 
+     2 (GENDER M NUMBER PL) 
+     7 (GENDER M NUMBER PL) 
+    ) 
+  VERB 
+    ( 
+     4 (A (1 2) N (2) )
+     7 (A (1 2) N (2) )
+     8 (A (1 2) N (2) )
+     10 (A (1 2) N (2) )
+    ) 
+  ) 
+|ne| 
+  ( 
+  ADJ 
+    ( 
+     2 (GENDER F NUMBER SING) 
+    ) 
+  VERB 
+    ( 
+     4 (E (1 3) )
+     7 (E (1 3) )
+    ) 
+  ) 
+|nes| 
+  ( 
+  ADJ 
+    ( 
+     2 (GENDER F NUMBER PL) 
+    ) 
+  VERB 
+    ( 
+     4 (E (2) )
+     7 (E (2) )
+    ) 
+  ) 
+|e| 
+  ( 
+  ADJ 
+    ( 
+     3 (GENDER F NUMBER SING) 
+     5 (GENDER F NUMBER SING) 
+    ) 
+  NOUN 
+    ( 
+     7 (GENDER F NUMBER SING) 
+    ) 
+  VERB 
+    ( 
+     1 (A (1 3) E (1 3) N (2) )
+     2 (A (1 3) E (1 3) N (2) )
+     5 (A (1 3) E (1 3) N (2) )
+     6 (E (1 3) )
+     8 (E (1 3) )
+     10 (E (1 3) )
+    ) 
+  ) 
+|es| 
+  ( 
+  ADJ 
+    ( 
+     3 (GENDER F NUMBER PL) 
+     5 (GENDER F NUMBER PL) 
+    ) 
+  NOUN 
+    ( 
+     7 (GENDER F NUMBER PL) 
+    ) 
+  VERB 
+    ( 
+     1 (A (2) E (2) )
+     2 (A (2) E (2) )
+     5 (A (2) E (2) )
+     6 (E (2) )
+     8 (E (2) )
+     10 (E (2) )
+    ) 
+  ) 
+|se| 
+  ( 
+  ADJ 
+    ( 
+     4 (GENDER F NUMBER SING) 
+     8 (GENDER F NUMBER SING) 
+    ) 
+  ) 
+|ses| 
+  ( 
+  ADJ 
+    ( 
+     4 (GENDER F NUMBER PL) 
+     8 (GENDER F NUMBER PL) 
+    ) 
+  ) 
+|le| 
+  ( 
+  ADJ 
+    ( 
+     6 (GENDER F NUMBER SING) 
+     16 (GENDER F NUMBER SING) 
+    ) 
+  ) 
+|les| 
+  ( 
+  ADJ 
+    ( 
+     6 (GENDER F NUMBER PL) 
+     16 (GENDER F NUMBER PL) 
+    ) 
+  ) 
+|he| 
+  ( 
+  ADJ 
+    ( 
+     7 (GENDER F NUMBER SING) 
+    ) 
+  ) 
+|hes| 
+  ( 
+  ADJ 
+    ( 
+     7 (GENDER F NUMBER PL) 
+    ) 
+  ) 
+|x| 
+  ( 
+  ADJ 
+    ( 
+     8 (NUMBER ALLVAL GENDER M) 
+     9 (NUMBER ALLVAL GENDER M) 
+     10 (NUMBER ALLVAL GENDER M) 
+    ) 
+  NOUN 
+    ( 
+     10 (GENDER M NUMBER PL) 
+    ) 
+  ) 
+|sse| 
+  ( 
+  ADJ 
+    ( 
+     9 (GENDER F NUMBER SING) 
+    ) 
+  ) 
+|sses| 
+  ( 
+  ADJ 
+    ( 
+     9 (GENDER F NUMBER PL) 
+    ) 
+  ) 
+|ce| 
+  ( 
+  ADJ 
+    ( 
+     10 (GENDER F NUMBER SING) 
+    ) 
+  ) 
+|ces| 
+  ( 
+  ADJ 
+    ( 
+     10 (GENDER F NUMBER PL) 
+    ) 
+  ) 
+|et| 
+  ( 
+  ADJ 
+    ( 
+     11 (GENDER M NUMBER SING) 
+    ) 
+  ) 
+|ète| 
+  ( 
+  ADJ 
+    ( 
+     11 (GENDER F NUMBER SING) 
+    ) 
+  ) 
+|ets| 
+  ( 
+  ADJ 
+    ( 
+     11 (GENDER M NUMBER PL) 
+    ) 
+  ) 
+|ètes| 
+  ( 
+  ADJ 
+    ( 
+     11 (GENDER F NUMBER PL) 
+    ) 
+  ) 
+|er| 
+  ( 
+  ADJ 
+    ( 
+     12 (GENDER M NUMBER SING) 
+    ) 
+  VERB 
+    ( 
+     1 (M )
+     2 (M )
+    ) 
+  ) 
+|ère| 
+  ( 
+  ADJ 
+    ( 
+     12 (GENDER F NUMBER SING) 
+    ) 
+  ) 
+|ers| 
+  ( 
+  ADJ 
+    ( 
+     12 (GENDER M NUMBER PL) 
+    ) 
+  ) 
+|ères| 
+  ( 
+  ADJ 
+    ( 
+     12 (GENDER F NUMBER PL) 
+    ) 
+  ) 
+|let| 
+  ( 
+  ADJ 
+    ( 
+     13 (GENDER M NUMBER SING) 
+    ) 
+  ) 
+|lette| 
+  ( 
+  ADJ 
+    ( 
+     13 (GENDER F NUMBER SING) 
+    ) 
+  ) 
+|lets| 
+  ( 
+  ADJ 
+    ( 
+     13 (GENDER M NUMBER PL) 
+    ) 
+  ) 
+|lettes| 
+  ( 
+  ADJ 
+    ( 
+     13 (GENDER F NUMBER PL) 
+    ) 
+  ) 
+|f| 
+  ( 
+  ADJ 
+    ( 
+     14 (GENDER M NUMBER SING) 
+    ) 
+  ) 
+|ve| 
+  ( 
+  ADJ 
+    ( 
+     14 (GENDER F NUMBER SING) 
+    ) 
+  ) 
+|fs| 
+  ( 
+  ADJ 
+    ( 
+     14 (GENDER M NUMBER PL) 
+    ) 
+  ) 
+|ves| 
+  ( 
+  ADJ 
+    ( 
+     14 (GENDER F NUMBER PL) 
+    ) 
+  ) 
+|c| 
+  ( 
+  ADJ 
+    ( 
+     15 (GENDER M NUMBER SING) 
+    ) 
+  ) 
+|que| 
+  ( 
+  ADJ 
+    ( 
+     15 (GENDER F NUMBER SING) 
+    ) 
+  ) 
+|cs| 
+  ( 
+  ADJ 
+    ( 
+     15 (GENDER M NUMBER PL) 
+    ) 
+  ) 
+|ques| 
+  ( 
+  ADJ 
+    ( 
+     15 (GENDER F NUMBER PL) 
+    ) 
+  ) 
+|nel| 
+  ( 
+  ADJ 
+    ( 
+     17 (GENDER M NUMBER SING) 
+    ) 
+  ) 
+|nelle| 
+  ( 
+  ADJ 
+    ( 
+     17 (GENDER F NUMBER SING) 
+    ) 
+  ) 
+|nels| 
+  ( 
+  ADJ 
+    ( 
+     17 (GENDER M NUMBER PL) 
+    ) 
+  ) 
+|nelles| 
+  ( 
+  ADJ 
+    ( 
+     17 (GENDER F NUMBER PL) 
+    ) 
+  ) 
+|al| 
+  ( 
+  ADJ 
+    ( 
+     18 (GENDER M NUMBER SING) 
+     19 (GENDER M NUMBER SING) 
+    ) 
+  ) 
+|ale| 
+  ( 
+  ADJ 
+    ( 
+     18 (GENDER F NUMBER SING) 
+     19 (GENDER F NUMBER SING) 
+    ) 
+  ) 
+|aux| 
+  ( 
+  ADJ 
+    ( 
+     18 (GENDER M NUMBER PL) 
+     20 (GENDER M NUMBER PL) 
+    ) 
+  ) 
+|ales| 
+  ( 
+  ADJ 
+    ( 
+     18 (GENDER F NUMBER PL) 
+     19 (GENDER F NUMBER PL) 
+    ) 
+  ) 
+|als| 
+  ( 
+  ADJ 
+    ( 
+     19 (GENDER M NUMBER PL) 
+    ) 
+  ) 
+|au| 
+  ( 
+  ADJ 
+    ( 
+     20 (GENDER M NUMBER SING) 
+    ) 
+  ) 
+|lle| 
+  ( 
+  ADJ 
+    ( 
+     20 (GENDER F NUMBER SING) 
+    ) 
+  ) 
+|lles| 
+  ( 
+  ADJ 
+    ( 
+     20 (GENDER F NUMBER PL) 
+    ) 
+  ) 
+|ible| 
+  ( 
+  ADJ 
+    ( 
+     21 (GENDER ALLVAL NUMBER SING) 
+    ) 
+  ) 
+|ibles| 
+  ( 
+  ADJ 
+    ( 
+     21 (GENDER ALLVAL NUMBER PL) 
+    ) 
+  ) 
+|able| 
+  ( 
+  ADJ 
+    ( 
+     22 (GENDER ALLVAL NUMBER SING) 
+    ) 
+  ) 
+|ables| 
+  ( 
+  ADJ 
+    ( 
+     22 (GENDER ALLVAL NUMBER PL) 
+    ) 
+  ) 
+|teur| 
+  ( 
+  ADJ 
+    ( 
+     23 (GENDER M NUMBER SING) 
+    ) 
+  ) 
+|trice| 
+  ( 
+  ADJ 
+    ( 
+     23 (GENDER F NUMBER SING) 
+    ) 
+  ) 
+|teurs| 
+  ( 
+  ADJ 
+    ( 
+     23 (GENDER M NUMBER PL) 
+    ) 
+  ) 
+|trices| 
+  ( 
+  ADJ 
+    ( 
+     23 (GENDER F NUMBER PL) 
+    ) 
+  ) 
+|ue| 
+  ( 
+  ADJ 
+    ( 
+     24 (GENDER F NUMBER SING) 
+    ) 
+  VERB 
+    ( 
+     4 (I (GENDER F NUMBER SING) )
+     6 (I (GENDER F NUMBER SING) )
+     9 (I (GENDER F NUMBER SING) )
+    ) 
+  ) 
+|ues| 
+  ( 
+  ADJ 
+    ( 
+     24 (GENDER F NUMBER PL) 
+    ) 
+  VERB 
+    ( 
+     4 (I (GENDER F NUMBER PL) )
+     6 (I (GENDER F NUMBER PL) )
+     9 (I (GENDER F NUMBER PL) )
+    ) 
+  ) 
+|if| 
+  ( 
+  ADJ 
+    ( 
+     25 (GENDER M NUMBER SING) 
+    ) 
+  ) 
+|ive| 
+  ( 
+  ADJ 
+    ( 
+     25 (GENDER F NUMBER SING) 
+    ) 
+  ) 
+|ifs| 
+  ( 
+  ADJ 
+    ( 
+     25 (GENDER M NUMBER PL) 
+    ) 
+  ) 
+|ives| 
+  ( 
+  ADJ 
+    ( 
+     25 (GENDER F NUMBER PL) 
+    ) 
+  ) 
+|ation| 
+  ( 
+  NOUN 
+    ( 
+     3 (GENDER F NUMBER SING) 
+    ) 
+  ) 
+|ations| 
+  ( 
+  NOUN 
+    ( 
+     3 (GENDER F NUMBER PL) 
+    ) 
+  ) 
+|ion| 
+  ( 
+  NOUN 
+    ( 
+     4 (GENDER F NUMBER SING) 
+    ) 
+  ) 
+|ions| 
+  ( 
+  NOUN 
+    ( 
+     4 (GENDER F NUMBER PL) 
+    ) 
+  VERB 
+    ( 
+     1 (B (4) E (4) )
+     2 (B (4) E (4) )
+     4 (B (4) E (4) )
+     5 (B (4) E (4) )
+     6 (B (4) E (4) )
+     7 (B (4) E (4) )
+     8 (B (4) E (4) )
+     10 (B (4) E (4) )
+    ) 
+  ) 
+|eur| 
+  ( 
+  NOUN 
+    ( 
+     5 (GENDER M NUMBER SING) 
+     6 (GENDER M NUMBER SING) 
+    ) 
+  ) 
+|euse| 
+  ( 
+  NOUN 
+    ( 
+     5 (GENDER F NUMBER SING) 
+    ) 
+  ) 
+|eurs| 
+  ( 
+  NOUN 
+    ( 
+     5 (GENDER M NUMBER PL) 
+     6 (GENDER M NUMBER PL) 
+    ) 
+  ) 
+|euses| 
+  ( 
+  NOUN 
+    ( 
+     5 (GENDER F NUMBER PL) 
+    ) 
+  ) 
+|rice| 
+  ( 
+  NOUN 
+    ( 
+     6 (GENDER F NUMBER SING) 
+    ) 
+  ) 
+|rices| 
+  ( 
+  NOUN 
+    ( 
+     6 (GENDER F NUMBER PL) 
+    ) 
+  ) 
+|ité| 
+  ( 
+  NOUN 
+    ( 
+     8 (GENDER F NUMBER SING) 
+    ) 
+  ) 
+|ités| 
+  ( 
+  NOUN 
+    ( 
+     8 (GENDER F NUMBER PL) 
+    ) 
+  ) 
+|iste| 
+  ( 
+  NOUN 
+    ( 
+     9 (GENDER ALLVAL NUMBER SING) 
+    ) 
+  ) 
+|istes| 
+  ( 
+  NOUN 
+    ( 
+     9 (GENDER ALLVAL NUMBER PL) 
+    ) 
+  ) 
+|ons| 
+  ( 
+  VERB 
+    ( 
+     1 (A (4) N (4) )
+     4 (A (4) N (4) )
+     5 (A (4) N (4) )
+     6 (A (4) N (4) )
+     7 (A (4) N (4) )
+     8 (A (4) N (4) )
+     10 (A (4) N (4) )
+    ) 
+  ) 
+|ez| 
+  ( 
+  VERB 
+    ( 
+     1 (A (5) N (5) )
+     2 (A (5) N (5) )
+     4 (A (5) N (5) )
+     5 (A (5) N (5) )
+     6 (A (5) )
+     7 (A (5) N (5) )
+     8 (A (5) N (5) )
+     10 (A (5) N (5) )
+    ) 
+  ) 
+|ent| 
+  ( 
+  VERB 
+    ( 
+     1 (A (6) E (6) )
+     2 (A (6) E (6) )
+     5 (A (6) E (6) )
+     6 (A (6) E (6) )
+     8 (A (6) E (6) )
+     10 (A (6) E (6) )
+    ) 
+  ) 
+|ais| 
+  ( 
+  VERB 
+    ( 
+     1 (B (1 2) )
+     4 (B (1 2) )
+     5 (B (1 2) )
+     6 (B (1 2) )
+     7 (B (1 2) )
+     8 (B (1 2) )
+     9 (A (1 2) N (2) )
+     10 (B (1 2) )
+    ) 
+  ) 
+|ait| 
+  ( 
+  VERB 
+    ( 
+     1 (B (3) )
+     4 (B (3) )
+     5 (B (3) )
+     6 (B (3) )
+     7 (B (3) )
+     8 (B (3) )
+     10 (B (3) )
+    ) 
+  ) 
+|iez| 
+  ( 
+  VERB 
+    ( 
+     1 (B (5) E (5) )
+     2 (B (5) E (5) )
+     4 (B (5) E (5) )
+     5 (B (5) E (5) )
+     6 (B (5) E (5) )
+     7 (B (5) E (5) )
+     8 (B (5) E (5) )
+     10 (B (5) E (5) )
+    ) 
+  ) 
+|aient| 
+  ( 
+  VERB 
+    ( 
+     1 (B (6) )
+     4 (B (6) )
+     5 (B (6) )
+     6 (B (6) )
+     7 (B (6) )
+     8 (B (6) )
+     10 (B (6) )
+    ) 
+  ) 
+|ai| 
+  ( 
+  VERB 
+    ( 
+     1 (C (1) )
+    ) 
+  ) 
+|as| 
+  ( 
+  VERB 
+    ( 
+     1 (C (2) )
+    ) 
+  ) 
+|a| 
+  ( 
+  VERB 
+    ( 
+     1 (C (3) )
+    ) 
+  ) 
+|âmes| 
+  ( 
+  VERB 
+    ( 
+     1 (C (4) )
+    ) 
+  ) 
+|âtes| 
+  ( 
+  VERB 
+    ( 
+     1 (C (5) )
+    ) 
+  ) 
+|èrent| 
+  ( 
+  VERB 
+    ( 
+     1 (C (6) )
+     2 (C (6) )
+    ) 
+  ) 
+|erai| 
+  ( 
+  VERB 
+    ( 
+     1 (D (1) )
+     2 (D (1) )
+    ) 
+  ) 
+|eras| 
+  ( 
+  VERB 
+    ( 
+     1 (D (2) )
+     2 (D (2) )
+    ) 
+  ) 
+|era| 
+  ( 
+  VERB 
+    ( 
+     1 (D (3) )
+     2 (D (3) )
+    ) 
+  ) 
+|erons| 
+  ( 
+  VERB 
+    ( 
+     1 (D (4) )
+     2 (D (4) )
+    ) 
+  ) 
+|erez| 
+  ( 
+  VERB 
+    ( 
+     1 (D (5) )
+     2 (D (5) )
+    ) 
+  ) 
+|eront| 
+  ( 
+  VERB 
+    ( 
+     1 (D (6) )
+     2 (D (6) )
+    ) 
+  ) 
+|asse| 
+  ( 
+  VERB 
+    ( 
+     1 (F (1) )
+    ) 
+  ) 
+|asses| 
+  ( 
+  VERB 
+    ( 
+     1 (F (2) )
+    ) 
+  ) 
+|ât| 
+  ( 
+  VERB 
+    ( 
+     1 (F (3) )
+    ) 
+  ) 
+|assions| 
+  ( 
+  VERB 
+    ( 
+     1 (F (4) )
+    ) 
+  ) 
+|assiez| 
+  ( 
+  VERB 
+    ( 
+     1 (F (5) )
+    ) 
+  ) 
+|assent| 
+  ( 
+  VERB 
+    ( 
+     1 (F (6) )
+    ) 
+  ) 
+|erais| 
+  ( 
+  VERB 
+    ( 
+     1 (G (1 2) )
+     2 (G (1 2) )
+    ) 
+  ) 
+|erait| 
+  ( 
+  VERB 
+    ( 
+     1 (G (3) )
+     2 (G (3) )
+    ) 
+  ) 
+|erions| 
+  ( 
+  VERB 
+    ( 
+     1 (G (4) )
+     2 (G (4) )
+    ) 
+  ) 
+|eriez| 
+  ( 
+  VERB 
+    ( 
+     1 (G (5) )
+     2 (G (5) )
+    ) 
+  ) 
+|eraient| 
+  ( 
+  VERB 
+    ( 
+     1 (G (6) )
+     2 (G (6) )
+    ) 
+  ) 
+|ant| 
+  ( 
+  VERB 
+    ( 
+     1 (H (GENDER M NUMBER SING) L )
+     4 (H (GENDER M NUMBER SING) L )
+     5 (H (GENDER M NUMBER SING) L )
+     6 (H (GENDER M NUMBER SING) L )
+     7 (H (GENDER M NUMBER SING) L )
+     8 (H (GENDER M NUMBER SING) L )
+     9 (L )
+     10 (H (GENDER M NUMBER SING) L )
+    ) 
+  ) 
+|ante| 
+  ( 
+  VERB 
+    ( 
+     1 (H (GENDER F NUMBER SING) )
+     4 (H (GENDER F NUMBER SING) )
+     5 (H (GENDER F NUMBER SING) )
+     6 (H (GENDER F NUMBER SING) )
+     7 (H (GENDER F NUMBER SING) )
+     8 (H (GENDER F NUMBER SING) )
+     10 (H (GENDER F NUMBER SING) )
+    ) 
+  ) 
+|ants| 
+  ( 
+  VERB 
+    ( 
+     1 (H (GENDER M NUMBER PL) )
+     4 (H (GENDER M NUMBER PL) )
+     5 (H (GENDER M NUMBER PL) )
+     6 (H (GENDER M NUMBER PL) )
+     7 (H (GENDER M NUMBER PL) )
+     8 (H (GENDER M NUMBER PL) )
+     10 (H (GENDER M NUMBER PL) )
+    ) 
+  ) 
+|antes| 
+  ( 
+  VERB 
+    ( 
+     1 (H (GENDER F NUMBER PL) )
+     4 (H (GENDER F NUMBER PL) )
+     5 (H (GENDER F NUMBER PL) )
+     6 (H (GENDER F NUMBER PL) )
+     7 (H (GENDER F NUMBER PL) )
+     8 (H (GENDER F NUMBER PL) )
+     10 (H (GENDER F NUMBER PL) )
+    ) 
+  ) 
+|é| 
+  ( 
+  VERB 
+    ( 
+     1 (I (GENDER M NUMBER SING) )
+     2 (I (GENDER M NUMBER SING) )
+    ) 
+  ) 
+|ée| 
+  ( 
+  VERB 
+    ( 
+     1 (I (GENDER F NUMBER SING) )
+     2 (I (GENDER F NUMBER SING) )
+    ) 
+  ) 
+|és| 
+  ( 
+  VERB 
+    ( 
+     1 (I (GENDER M NUMBER PL) )
+     2 (I (GENDER M NUMBER PL) )
+    ) 
+  ) 
+|ées| 
+  ( 
+  VERB 
+    ( 
+     1 (I (GENDER F NUMBER PL) )
+     2 (I (GENDER F NUMBER PL) )
+    ) 
+  ) 
+|eons| 
+  ( 
+  VERB 
+    ( 
+     2 (A (4) N (4) )
+    ) 
+  ) 
+|eais| 
+  ( 
+  VERB 
+    ( 
+     2 (B (1 2) )
+    ) 
+  ) 
+|eait| 
+  ( 
+  VERB 
+    ( 
+     2 (B (3) )
+    ) 
+  ) 
+|eaient| 
+  ( 
+  VERB 
+    ( 
+     2 (B (6) )
+    ) 
+  ) 
+|eai| 
+  ( 
+  VERB 
+    ( 
+     2 (C (1) )
+    ) 
+  ) 
+|eas| 
+  ( 
+  VERB 
+    ( 
+     2 (C (2) )
+    ) 
+  ) 
+|ea| 
+  ( 
+  VERB 
+    ( 
+     2 (C (3) )
+    ) 
+  ) 
+|eâmes| 
+  ( 
+  VERB 
+    ( 
+     2 (C (4) )
+    ) 
+  ) 
+|eâtes| 
+  ( 
+  VERB 
+    ( 
+     2 (C (5) )
+    ) 
+  ) 
+|easse| 
+  ( 
+  VERB 
+    ( 
+     2 (F (1) )
+    ) 
+  ) 
+|easses| 
+  ( 
+  VERB 
+    ( 
+     2 (F (2) )
+    ) 
+  ) 
+|eât| 
+  ( 
+  VERB 
+    ( 
+     2 (F (3) )
+    ) 
+  ) 
+|eassions| 
+  ( 
+  VERB 
+    ( 
+     2 (F (4) )
+    ) 
+  ) 
+|eassiez| 
+  ( 
+  VERB 
+    ( 
+     2 (F (5) )
+    ) 
+  ) 
+|eassent| 
+  ( 
+  VERB 
+    ( 
+     2 (F (6) )
+    ) 
+  ) 
+|eant| 
+  ( 
+  VERB 
+    ( 
+     2 (H (GENDER M NUMBER SING) L )
+    ) 
+  ) 
+|eante| 
+  ( 
+  VERB 
+    ( 
+     2 (H (GENDER F NUMBER SING) )
+    ) 
+  ) 
+|eants| 
+  ( 
+  VERB 
+    ( 
+     2 (H (GENDER M NUMBER PL) )
+    ) 
+  ) 
+|eantes| 
+  ( 
+  VERB 
+    ( 
+     2 (H (GENDER F NUMBER PL) )
+    ) 
+  ) 
+|is| 
+  ( 
+  VERB 
+    ( 
+     3 (A (1 2) C (1 2) I (GENDER M NUMBER PL) N (2) )
+     5 (C (1 2) )
+     7 (C (1 2) I (NUMBER ALLVAL GENDER M) )
+     8 (C (1 2) )
+    ) 
+  ) 
+|it| 
+  ( 
+  VERB 
+    ( 
+     3 (A (3) C (3) )
+     5 (C (3) )
+     7 (C (3) )
+     8 (C (3) )
+    ) 
+  ) 
+|issons| 
+  ( 
+  VERB 
+    ( 
+     3 (A (4) N (4) )
+    ) 
+  ) 
+|issez| 
+  ( 
+  VERB 
+    ( 
+     3 (A (5) N (5) )
+    ) 
+  ) 
+|issent| 
+  ( 
+  VERB 
+    ( 
+     3 (A (6) E (6) F (6) )
+     5 (F (6) )
+     7 (F (6) )
+     8 (F (6) )
+    ) 
+  ) 
+|issais| 
+  ( 
+  VERB 
+    ( 
+     3 (B (1 2) )
+    ) 
+  ) 
+|issait| 
+  ( 
+  VERB 
+    ( 
+     3 (B (3) )
+    ) 
+  ) 
+|issions| 
+  ( 
+  VERB 
+    ( 
+     3 (B (4) E (4) F (4) )
+     5 (F (4) )
+     7 (F (4) )
+     8 (F (4) )
+    ) 
+  ) 
+|issiez| 
+  ( 
+  VERB 
+    ( 
+     3 (B (5) E (5) F (5) )
+     5 (F (5) )
+     7 (F (5) )
+     8 (F (5) )
+    ) 
+  ) 
+|issaient| 
+  ( 
+  VERB 
+    ( 
+     3 (B (6) )
+    ) 
+  ) 
+|îmes| 
+  ( 
+  VERB 
+    ( 
+     3 (C (4) )
+     5 (C (4) )
+     7 (C (4) )
+     8 (C (4) )
+    ) 
+  ) 
+|îtes| 
+  ( 
+  VERB 
+    ( 
+     3 (C (5) )
+     5 (C (5) )
+     7 (C (5) )
+     8 (C (5) )
+    ) 
+  ) 
+|irent| 
+  ( 
+  VERB 
+    ( 
+     3 (C (6) )
+     5 (C (6) )
+     7 (C (6) )
+     8 (C (6) )
+    ) 
+  ) 
+|irai| 
+  ( 
+  VERB 
+    ( 
+     3 (D (1) )
+     5 (D (1) )
+    ) 
+  ) 
+|iras| 
+  ( 
+  VERB 
+    ( 
+     3 (D (2) )
+     5 (D (2) )
+    ) 
+  ) 
+|ira| 
+  ( 
+  VERB 
+    ( 
+     3 (D (3) )
+     5 (D (3) )
+    ) 
+  ) 
+|irons| 
+  ( 
+  VERB 
+    ( 
+     3 (D (4) )
+     5 (D (4) )
+    ) 
+  ) 
+|irez| 
+  ( 
+  VERB 
+    ( 
+     3 (D (5) )
+     5 (D (5) )
+    ) 
+  ) 
+|iront| 
+  ( 
+  VERB 
+    ( 
+     3 (D (6) )
+     5 (D (6) )
+    ) 
+  ) 
+|isse| 
+  ( 
+  VERB 
+    ( 
+     3 (E (1 3) F (1) )
+     5 (F (1) )
+     7 (F (1) )
+     8 (F (1) )
+    ) 
+  ) 
+|isses| 
+  ( 
+  VERB 
+    ( 
+     3 (E (2) F (2) )
+     5 (F (2) )
+     7 (F (2) )
+     8 (F (2) )
+    ) 
+  ) 
+|ît| 
+  ( 
+  VERB 
+    ( 
+     3 (F (3) )
+     5 (F (3) )
+     7 (F (3) )
+     8 (F (3) )
+    ) 
+  ) 
+|irais| 
+  ( 
+  VERB 
+    ( 
+     3 (G (1 2) )
+     5 (G (1 2) )
+    ) 
+  ) 
+|irait| 
+  ( 
+  VERB 
+    ( 
+     3 (G (3) )
+     5 (G (3) )
+    ) 
+  ) 
+|irions| 
+  ( 
+  VERB 
+    ( 
+     3 (G (4) )
+     5 (G (4) )
+    ) 
+  ) 
+|iriez| 
+  ( 
+  VERB 
+    ( 
+     3 (G (5) )
+     5 (G (5) )
+    ) 
+  ) 
+|iraient| 
+  ( 
+  VERB 
+    ( 
+     3 (G (6) )
+     5 (G (6) )
+    ) 
+  ) 
+|issant| 
+  ( 
+  VERB 
+    ( 
+     3 (H (GENDER M NUMBER SING) L )
+    ) 
+  ) 
+|issante| 
+  ( 
+  VERB 
+    ( 
+     3 (H (GENDER F NUMBER SING) )
+    ) 
+  ) 
+|issants| 
+  ( 
+  VERB 
+    ( 
+     3 (H (GENDER M NUMBER PL) )
+    ) 
+  ) 
+|issantes| 
+  ( 
+  VERB 
+    ( 
+     3 (H (GENDER F NUMBER PL) )
+    ) 
+  ) 
+|i| 
+  ( 
+  VERB 
+    ( 
+     3 (I (GENDER M NUMBER SING) )
+    ) 
+  ) 
+|ie| 
+  ( 
+  VERB 
+    ( 
+     3 (I (GENDER F NUMBER SING) )
+    ) 
+  ) 
+|ies| 
+  ( 
+  VERB 
+    ( 
+     3 (I (GENDER F NUMBER PL) )
+    ) 
+  ) 
+|ir| 
+  ( 
+  VERB 
+    ( 
+     3 (M )
+     4 (M )
+     5 (M )
+    ) 
+  ) 
+|t| 
+  ( 
+  VERB 
+    ( 
+     4 (A (3) )
+     8 (A (3) I (GENDER M NUMBER SING) )
+     10 (A (3) )
+    ) 
+  ) 
+|nent| 
+  ( 
+  VERB 
+    ( 
+     4 (A (6) E (6) )
+     7 (A (6) E (6) )
+    ) 
+  ) 
+|ins| 
+  ( 
+  VERB 
+    ( 
+     4 (C (1 2) )
+    ) 
+  ) 
+|int| 
+  ( 
+  VERB 
+    ( 
+     4 (C (3) )
+    ) 
+  ) 
+|înmes| 
+  ( 
+  VERB 
+    ( 
+     4 (C (4) )
+    ) 
+  ) 
+|întes| 
+  ( 
+  VERB 
+    ( 
+     4 (C (5) )
+    ) 
+  ) 
+|inrent| 
+  ( 
+  VERB 
+    ( 
+     4 (C (6) )
+    ) 
+  ) 
+|drai| 
+  ( 
+  VERB 
+    ( 
+     4 (D (1) )
+     8 (D (1) )
+    ) 
+  ) 
+|dras| 
+  ( 
+  VERB 
+    ( 
+     4 (D (2) )
+     8 (D (2) )
+    ) 
+  ) 
+|dra| 
+  ( 
+  VERB 
+    ( 
+     4 (D (3) )
+     8 (D (3) )
+    ) 
+  ) 
+|drons| 
+  ( 
+  VERB 
+    ( 
+     4 (D (4) )
+     8 (D (4) )
+    ) 
+  ) 
+|drez| 
+  ( 
+  VERB 
+    ( 
+     4 (D (5) )
+     8 (D (5) )
+    ) 
+  ) 
+|dront| 
+  ( 
+  VERB 
+    ( 
+     4 (D (6) )
+     8 (D (6) )
+    ) 
+  ) 
+|insse| 
+  ( 
+  VERB 
+    ( 
+     4 (F (1) )
+    ) 
+  ) 
+|insses| 
+  ( 
+  VERB 
+    ( 
+     4 (F (2) )
+    ) 
+  ) 
+|înt| 
+  ( 
+  VERB 
+    ( 
+     4 (F (3) )
+    ) 
+  ) 
+|inssions| 
+  ( 
+  VERB 
+    ( 
+     4 (F (4) )
+    ) 
+  ) 
+|inssiez| 
+  ( 
+  VERB 
+    ( 
+     4 (F (5) )
+    ) 
+  ) 
+|inssent| 
+  ( 
+  VERB 
+    ( 
+     4 (F (6) )
+    ) 
+  ) 
+|drais| 
+  ( 
+  VERB 
+    ( 
+     4 (G (1 2) )
+     8 (G (1 2) )
+    ) 
+  ) 
+|drait| 
+  ( 
+  VERB 
+    ( 
+     4 (G (3) )
+     8 (G (3) )
+    ) 
+  ) 
+|drions| 
+  ( 
+  VERB 
+    ( 
+     4 (G (4) )
+     8 (G (4) )
+    ) 
+  ) 
+|driez| 
+  ( 
+  VERB 
+    ( 
+     4 (G (5) )
+     8 (G (5) )
+    ) 
+  ) 
+|draient| 
+  ( 
+  VERB 
+    ( 
+     4 (G (6) )
+     8 (G (6) )
+    ) 
+  ) 
+|u| 
+  ( 
+  VERB 
+    ( 
+     4 (I (GENDER M NUMBER SING) )
+     6 (I (GENDER M NUMBER SING) )
+     9 (I (GENDER M NUMBER SING) )
+     10 (I (GENDER M NUMBER SING) )
+    ) 
+  ) 
+|us| 
+  ( 
+  VERB 
+    ( 
+     4 (I (GENDER M NUMBER PL) )
+     6 (C (1 2) I (GENDER M NUMBER PL) )
+     9 (C (1 2) I (GENDER M NUMBER PL) )
+     10 (C (1 2) I (GENDER M NUMBER PL) )
+    ) 
+  ) 
+|ert| 
+  ( 
+  VERB 
+    ( 
+     5 (I (GENDER M NUMBER SING) )
+    ) 
+  ) 
+|erte| 
+  ( 
+  VERB 
+    ( 
+     5 (I (GENDER F NUMBER SING) )
+    ) 
+  ) 
+|erts| 
+  ( 
+  VERB 
+    ( 
+     5 (I (GENDER M NUMBER PL) )
+    ) 
+  ) 
+|ertes| 
+  ( 
+  VERB 
+    ( 
+     5 (I (GENDER F NUMBER PL) )
+    ) 
+  ) 
+|ois| 
+  ( 
+  VERB 
+    ( 
+     6 (A (1 2) N (2) )
+    ) 
+  ) 
+|oit| 
+  ( 
+  VERB 
+    ( 
+     6 (A (3) )
+    ) 
+  ) 
+|ut| 
+  ( 
+  VERB 
+    ( 
+     6 (C (3) )
+     9 (C (3) )
+     10 (C (3) )
+    ) 
+  ) 
+|ûmes| 
+  ( 
+  VERB 
+    ( 
+     6 (C (4) )
+     9 (C (4) )
+     10 (C (4) )
+    ) 
+  ) 
+|ûtes| 
+  ( 
+  VERB 
+    ( 
+     6 (C (5) )
+     9 (C (5) )
+     10 (C (5) )
+    ) 
+  ) 
+|urent| 
+  ( 
+  VERB 
+    ( 
+     6 (C (6) )
+     9 (C (6) )
+     10 (C (6) )
+    ) 
+  ) 
+|rai| 
+  ( 
+  VERB 
+    ( 
+     6 (D (1) )
+     7 (D (1) )
+     10 (D (1) )
+    ) 
+  ) 
+|ras| 
+  ( 
+  VERB 
+    ( 
+     6 (D (2) )
+     7 (D (2) )
+     10 (D (2) )
+    ) 
+  ) 
+|ra| 
+  ( 
+  VERB 
+    ( 
+     6 (D (3) )
+     7 (D (3) )
+     10 (D (3) )
+    ) 
+  ) 
+|rons| 
+  ( 
+  VERB 
+    ( 
+     6 (D (4) )
+     7 (D (4) )
+     10 (D (4) )
+    ) 
+  ) 
+|rez| 
+  ( 
+  VERB 
+    ( 
+     6 (D (5) )
+     7 (D (5) )
+     10 (D (5) )
+    ) 
+  ) 
+|ront| 
+  ( 
+  VERB 
+    ( 
+     6 (D (6) )
+     7 (D (6) )
+     10 (D (6) )
+    ) 
+  ) 
+|usse| 
+  ( 
+  VERB 
+    ( 
+     6 (F (1) )
+     9 (F (1) )
+     10 (F (1) )
+    ) 
+  ) 
+|usses| 
+  ( 
+  VERB 
+    ( 
+     6 (F (2) )
+     9 (F (2) )
+     10 (F (2) )
+    ) 
+  ) 
+|ût| 
+  ( 
+  VERB 
+    ( 
+     6 (F (3) )
+     9 (F (3) )
+     10 (F (3) )
+    ) 
+  ) 
+|ussions| 
+  ( 
+  VERB 
+    ( 
+     6 (F (4) )
+     9 (F (4) )
+     10 (F (4) )
+    ) 
+  ) 
+|ussiez| 
+  ( 
+  VERB 
+    ( 
+     6 (F (5) )
+     9 (F (5) )
+     10 (F (5) )
+    ) 
+  ) 
+|ussent| 
+  ( 
+  VERB 
+    ( 
+     6 (F (6) )
+     9 (F (6) )
+     10 (F (6) )
+    ) 
+  ) 
+|rais| 
+  ( 
+  VERB 
+    ( 
+     6 (G (1 2) )
+     7 (G (1 2) )
+     10 (G (1 2) )
+    ) 
+  ) 
+|rait| 
+  ( 
+  VERB 
+    ( 
+     6 (G (3) )
+     7 (G (3) )
+     10 (G (3) )
+    ) 
+  ) 
+|rions| 
+  ( 
+  VERB 
+    ( 
+     6 (G (4) )
+     7 (G (4) )
+     10 (G (4) )
+    ) 
+  ) 
+|riez| 
+  ( 
+  VERB 
+    ( 
+     6 (G (5) )
+     7 (G (5) )
+     10 (G (5) )
+    ) 
+  ) 
+|raient| 
+  ( 
+  VERB 
+    ( 
+     6 (G (6) )
+     7 (G (6) )
+     10 (G (6) )
+    ) 
+  ) 
+|oir| 
+  ( 
+  VERB 
+    ( 
+     6 (M )
+    ) 
+  ) 
+|vez| 
+  ( 
+  VERB 
+    ( 
+     6 (N (5) )
+    ) 
+  ) 
+|ise| 
+  ( 
+  VERB 
+    ( 
+     7 (I (GENDER F NUMBER SING) )
+    ) 
+  ) 
+|ises| 
+  ( 
+  VERB 
+    ( 
+     7 (I (GENDER F NUMBER PL) )
+    ) 
+  ) 
+|re| 
+  ( 
+  VERB 
+    ( 
+     7 (M )
+     10 (M )
+    ) 
+  ) 
+|te| 
+  ( 
+  VERB 
+    ( 
+     8 (I (GENDER F NUMBER SING) )
+    ) 
+  ) 
+|ts| 
+  ( 
+  VERB 
+    ( 
+     8 (I (GENDER M NUMBER PL) )
+    ) 
+  ) 
+|tes| 
+  ( 
+  VERB 
+    ( 
+     8 (I (GENDER F NUMBER PL) )
+    ) 
+  ) 
+|dre| 
+  ( 
+  VERB 
+    ( 
+     8 (M )
+    ) 
+  ) 
+|aît| 
+  ( 
+  VERB 
+    ( 
+     9 (A (3) )
+    ) 
+  ) 
+|aissons| 
+  ( 
+  VERB 
+    ( 
+     9 (A (4) N (4) )
+    ) 
+  ) 
+|aissez| 
+  ( 
+  VERB 
+    ( 
+     9 (A (5) N (5) )
+    ) 
+  ) 
+|aissent| 
+  ( 
+  VERB 
+    ( 
+     9 (A (6) E (6) )
+    ) 
+  ) 
+|aissais| 
+  ( 
+  VERB 
+    ( 
+     9 (B (1 2) )
+    ) 
+  ) 
+|aissait| 
+  ( 
+  VERB 
+    ( 
+     9 (B (3) )
+    ) 
+  ) 
+|aissions| 
+  ( 
+  VERB 
+    ( 
+     9 (B (4) E (4) )
+    ) 
+  ) 
+|aissiez| 
+  ( 
+  VERB 
+    ( 
+     9 (B (5) E (5) )
+    ) 
+  ) 
+|aissaient| 
+  ( 
+  VERB 
+    ( 
+     9 (B (6) )
+    ) 
+  ) 
+|aîtrai| 
+  ( 
+  VERB 
+    ( 
+     9 (D (1) )
+    ) 
+  ) 
+|aîtras| 
+  ( 
+  VERB 
+    ( 
+     9 (D (2) G (2) )
+    ) 
+  ) 
+|aîtra| 
+  ( 
+  VERB 
+    ( 
+     9 (D (3) G (3) )
+    ) 
+  ) 
+|aîtrons| 
+  ( 
+  VERB 
+    ( 
+     9 (D (4) )
+    ) 
+  ) 
+|aîtrez| 
+  ( 
+  VERB 
+    ( 
+     9 (D (5) )
+    ) 
+  ) 
+|aîtront| 
+  ( 
+  VERB 
+    ( 
+     9 (D (6) )
+    ) 
+  ) 
+|aisse| 
+  ( 
+  VERB 
+    ( 
+     9 (E (1 3) )
+    ) 
+  ) 
+|aisses| 
+  ( 
+  VERB 
+    ( 
+     9 (E (2) )
+    ) 
+  ) 
+|aîtrais| 
+  ( 
+  VERB 
+    ( 
+     9 (G (1) )
+    ) 
+  ) 
+|aîtrions| 
+  ( 
+  VERB 
+    ( 
+     9 (G (4) )
+    ) 
+  ) 
+|aîtriez| 
+  ( 
+  VERB 
+    ( 
+     9 (G (5) )
+    ) 
+  ) 
+|aîtraient| 
+  ( 
+  VERB 
+    ( 
+     9 (G (6) )
+    ) 
+  ) 
+|aissant| 
+  ( 
+  VERB 
+    ( 
+     9 (H (GENDER M NUMBER SING) )
+    ) 
+  ) 
+|aissante| 
+  ( 
+  VERB 
+    ( 
+     9 (H (GENDER F NUMBER SING) )
+    ) 
+  ) 
+|aissants| 
+  ( 
+  VERB 
+    ( 
+     9 (H (GENDER M NUMBER PL) )
+    ) 
+  ) 
+|aissantes| 
+  ( 
+  VERB 
+    ( 
+     9 (H (GENDER F NUMBER PL) )
+    ) 
+  ) 
+|aître| 
+  ( 
+  VERB 
+    ( 
+     9 (M )
+    ) 
+  ) 
+|use| 
+  ( 
+  VERB 
+    ( 
+     10 (I (GENDER F NUMBER SING) )
+    ) 
+  ) 
+|uses| 
+  ( 
+  VERB 
+    ( 
+     10 (I (GENDER F NUMBER PL) )
+    ) 
+  ) 
+) 

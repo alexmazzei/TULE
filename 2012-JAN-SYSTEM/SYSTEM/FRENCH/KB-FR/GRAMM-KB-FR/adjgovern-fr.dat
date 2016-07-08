@@ -1,0 +1,8 @@
+(in-package "USER")
+
+(setq *ADJ-GOVERN*
+ '(
+   (applicable aux)
+   (conforme aux)
+   (relative aux)
+  ))

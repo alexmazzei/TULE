@@ -1,0 +1,31 @@
+
+#ifdef ECL_DYNAMIC_VV
+static cl_object *VV;
+#else
+static cl_object VV[VM];
+#endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+static cl_object L1build_sem_query(cl_narg, cl_object , ...);
+#define VT2 cl_object T0,T1,T2,T3;
+#define VLEX2
+#define CLSR2
+#define STCK2
+static cl_object L2apply_topic_changes(cl_object , cl_object );
+#define VT3 cl_object T0,T1;
+#define VLEX3
+#define CLSR3
+#define STCK3
+static cl_object L3find_know_theme(cl_object );
+#define VT4 cl_object T0,T1;
+#define VLEX4
+#define CLSR4
+#define STCK4
+static cl_object L4find_information_topic(cl_object );
+#define VT5 cl_object T0;
+#define VLEX5
+#define CLSR5
+#define STCK5
+static cl_object L5find_topic_subtree(cl_object );

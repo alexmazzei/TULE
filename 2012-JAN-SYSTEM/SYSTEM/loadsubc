@@ -1,0 +1,28 @@
+(in-package "USER")
+
+(load "ALLLANG/PROC-ALL/utilities")
+
+(compile-file "ITALIAN/KB-ITA/SUBCAT-KB-ITA/readsubcat")
+(load "ITALIAN/KB-ITA/SUBCAT-KB-ITA/readsubcat")
+
+(defvar *ALLVERBS*)
+(load "ITALIAN/KB-ITA/SUBCAT-KB-ITA/discv.lisp")
+
+(with-open-file (trport "ITALIAN/KB-ITA/SUBCAT-KB-ITA/discv.trans" 
+         :direction :output :if-exists :overwrite :if-does-not-exist :create)
+    (with-open-file (intrport "ITALIAN/KB-ITA/SUBCAT-KB-ITA/discv.intrans" 
+              :direction :output :if-exists :overwrite :if-does-not-exist :create)
+        (with-open-file (trintrport "ITALIAN/KB-ITA/SUBCAT-KB-ITA/discv.transintrans" 
+                  :direction :output :if-exists :overwrite :if-does-not-exist :create)
+            (with-open-file (reflport "ITALIAN/KB-ITA/SUBCAT-KB-ITA/discv.refl" 
+                      :direction :output :if-exists :overwrite :if-does-not-exist :create)
+                (with-open-file (trreflport "ITALIAN/KB-ITA/SUBCAT-KB-ITA/discv.transrefl" 
+                          :direction :output :if-exists :overwrite :if-does-not-exist :create)
+                    (with-open-file (intrreflport "ITALIAN/KB-ITA/SUBCAT-KB-ITA/discv.intransrefl" 
+                              :direction :output :if-exists :overwrite :if-does-not-exist :create)
+                        (with-open-file (otherport "ITALIAN/KB-ITA/SUBCAT-KB-ITA/discv.others" 
+                                  :direction :output :if-exists :overwrite :if-does-not-exist :create)
+                            (with-open-file (mixedport "ITALIAN/KB-ITA/SUBCAT-KB-ITA/discv.mixed" 
+                                      :direction :output :if-exists :overwrite :if-does-not-exist :create)
+     (split-trans trport intrport trintrport reflport trreflport intrreflport otherport mixedport)))))))))
+

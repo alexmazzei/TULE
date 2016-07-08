@@ -1,0 +1,6 @@
+(in-package "USER")
+
+(setq *ENCLITINFO*
+  nil
+  )
+

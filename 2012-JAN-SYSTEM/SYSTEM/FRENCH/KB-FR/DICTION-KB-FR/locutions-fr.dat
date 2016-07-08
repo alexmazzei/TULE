@@ -1,0 +1,172 @@
+(in-package "USER")
+
+; **************************************************************************
+; *** the locutions in this file are of two types: fixed and flexible.
+;     - fixed: they are sequences of words that are not subject to morphological
+;              analysis, and that are strictly adjacent to each other
+;     - flexible: as above, but with the possibility of morphological variations.
+;              ex "conferenza stampa" --> "conferenze stampa"
+;                 "da solo" --> "da soli"
+;     They are stored as pairs <form infos>, but in a single sequence, so the
+;     actual internal structure is <form1 infos1 form2 infos2 .... formN infosN>
+; *** the sequences are linked via a double mechanism:
+;     1. The "normalized form" must be the same for all component forms (as
+;        "of_course" in the following example:
+;             ( ...
+;               of      <of_course ...>
+;               course  <of_course ...>
+;               ... )
+;     2. The "root", "next", "prev" features in the "infos", which implement
+;        a doubly-linked list structure
+;             ( ...
+;               of      <.. prev nil root of next course ...>
+;               course  <.. prev or root course next nil ...>
+;               ... )
+; *** In general, the organization of each info-i is as follows:
+;     ( info-locut-1 info-locut-2 ... info-locut-N )
+;     This is due to the fact that eac form can belong to more than one locution
+;     In its turn, each info-locut-i includes the following:
+;     ( normalized-form CAT category TYPE synt-type LOCUT YES LOCTYPE fixed/flex
+;          PREV prev-form ROOT this-form NEXT next-form other-syntinfo)
+
+; ********************** list of defined locutions *********************
+; *** âêîôû ***
+; à_moins_que
+; ainsi_que
+; au_contraire
+; au_sens
+; aussi_que
+; autant_que
+; bon_marché
+; c'_est_à_dire
+; c'_est_pourquoi
+; celle_ci
+; ceux_ci
+; comme_si
+; coûte_que_coûte
+; d'_autant_moins_que
+; d'_autant_plus_que
+; de_même_que
+; de_plus_en_plus
+; en_cas_de
+; en_effet
+; en_faveur
+; en_outre
+; en_particulier
+; en_principe
+; en_revanche
+; en_tant_que
+; excepté_que
+; hors_service
+; le_cas_échéant
+; non_pas_que
+; par_conséquence
+; par_conséquent
+; par_exemple
+; plutôt_que
+; sauf_si
+; ---------------------------------------------------------------
+
+(loadinvar 'locutdef
+'(
+  |-| ((celle_ci cat pron locut yes type demons classe (0) gender f number pl case (lsubj lobj obl) root hyph loctype fixed prev celle next ci)
+       (ceux_ci cat pron locut yes type demons classe (0) gender m number pl case (lsubj lobj obl) root hyph loctype fixed prev ceux next ci))
+  |à| ((à_moins_que cat conj locut yes type subord root à loctype fixed prev nil next moins)
+       (|c'_est_à_dire| cat conj locut yes type coord root à loctype fixed prev est next dire))
+  |ainsi| ((ainsi_que cat conj locut yes type subord root ainsi loctype fixed prev nil next que))
+  |au| ((au_contraire cat conj locut yes type coord root au loctype fixed prev nil next contraire)
+        (au_sens cat prep locut yes type poli root au loctype fixed prev nil next sens))
+  |aussi| ((aussi_que cat conj locut yes type subord root aussi loctype fixed prev nil next que))
+  |autant| ((autant_que cat conj locut yes type subord root autant loctype fixed prev nil next que)
+           (|d'_autant_moins_que| cat conj locut yes type subord root autant loctype fixed prev |d'| next moins) 
+           (|d'_autant_plus_que| cat conj locut yes type subord root autant loctype fixed prev |d'| next plus))
+  |bon| ((bon_marché cat adv locut yes type quant root bon loctype fixed prev nil next marché))
+  |c'| ((|c'_est_à_dire| cat conj locut yes type coord root |c'| loctype fixed prev nil next est)
+        (|c'_est_pourquoi| cat conj locut yes type coord root |c'| loctype fixed prev nil next est))
+  |cas| ((en_cas_de cat prep locut yes root cas loctype fixed prev en next de)
+         (le_cas_échéant cat adv locut yes root cas loctype fixed prev le next échéant))
+  |celle| ((celle_ci cat pron locut yes type demons classe (0) gender f number pl case (lsubj lobj obl) root celle loctype fixed prev nil next hyph))
+  |ceux| ((ceux_ci cat pron locut yes type demons classe (0) gender m number pl case (lsubj lobj obl) root ceux loctype fixed prev nil next hyph))
+  |ci| ((celle_ci cat pron locut yes type demons classe (0) gender f number pl case (lsubj lobj obl) root ci loctype fixed prev hyph next nil)
+        (ceux_ci cat pron locut yes type demons classe (0) gender m number pl case (lsubj lobj obl) root ci loctype fixed prev hyph next nil))
+  |comme| ((comme_si cat conj locut yes type subord root comme loctype fixed prev nil next si))
+  |conséquence| ((par_conséquence cat conj locut yes type coord root conséquence loctype fixed prev par next nil))
+  |conséquent| ((par_conséquent cat conj locut yes type coord root conséquent loctype fixed prev par next nil))
+  |contraire| ((au_contraire cat conj locut yes type coord root contraire loctype fixed prev au next nil))
+  |coûte| ((coûte_que_coûte cat adv locut yes root coûte1 loctype fixed prev nil next que)
+           (coûte_que_coûte cat adv locut yes root coûte2 loctype fixed prev que next nil))
+  |d'| ((|d'_autant_moins_que| cat conj locut yes type subord root |d'| loctype fixed prev nil next autant)
+        (|d'_autant_plus_que| cat conj locut yes type subord root |d'| loctype fixed prev nil next autant))
+  |de| ((de_même_que cat conj locut yes type subord root de loctype fixed prev nil next même)
+        (de_plus_en_plus cat adv locut yes type quant root de loctype fixed prev nil next plus1)
+        (en_cas_de cat prep locut yes root de loctype fixed prev cas next nil))
+  |dire| ((|c'_est_à_dire| cat conj locut yes type coord root dire loctype fixed prev à next nil))
+  |échéant| ((le_cas_échéant cat adv locut yes root échéant loctype fixed prev cas next nil))
+  |effet| ((en_effet cat conj locut yes type coord root effet loctype fixed prev en next nil))
+  |en| ((de_plus_en_plus cat adv locut yes type quant root en loctype fixed prev plus1 next plus2)
+        (en_cas_de cat prep locut yes root en loctype fixed prev nil next cas)
+        (en_effet cat conj locut yes type coord root en loctype fixed prev nil next effet)        
+        (en_faveur cat prep type poli domin (de) locut yes root en loctype fixed prev nil next faveur)
+        (en_outre cat adv locut yes type streng root en loctype fixed prev nil next outre)
+        (en_particulier cat adv locut yes type quant root en loctype fixed prev nil next particulier)
+        (en_principe cat adv locut yes type quant root en loctype fixed prev nil next principe)
+        (en_revanche cat conj locut yes type coord root en loctype fixed prev nil next revanche)
+        (en_tant_que cat prep type poli semtype compar locut yes root en loctype fixed prev nil next tant)) 
+  |est| ((|c'_est_à_dire| cat conj locut yes type coord root est loctype fixed prev |c'| next à)
+         (|c'_est_pourquoi| cat conj locut yes type coord root est loctype fixed prev |c'| next pourquoi))
+  |excepté| ((excepté_que cat conj locut yes type subord root excepté loctype fixed prev nil next que))
+  |exemple| ((par_exemple cat conj locut yes type coord root exemple loctype fixed prev par next nil))
+  |faveur| ((en_faveur cat prep type poli domin (de) locut yes root faveur loctype fixed prev en next nil))
+  |hors| ((hors_service cat adj locut yes root hors loctype fixed prev nil next service)) 
+  |le| ((le_cas_échéant cat adv locut yes root le loctype fixed prev nil next cas))
+  |marché| ((bon_marché cat adv locut yes type quant root marché loctype fixed prev bon next nil))
+  |même| ((de_même_que cat conj locut yes typ subord root même loctype fixed prev de next que))
+  |moins| ((a_moins_que cat conj locut yes type subord root moins loctype fixed prev a next que)
+           (|d'_autant_moins_que| conj locut yes type subord root moins loctype fixed prev autant next que))
+  |non| ((non_pas_que cat conj locut yes type subord root non loctype fixed prev nil next pas))
+  |outre| ((en_outre cat adv locut yes type streng root outre loctype fixed prev en next nil))
+  |par| ((par_conséquence cat conj locut yes type coord root par loctype fixed prev nil next conséquence)
+         (par_conséquent cat conj locut yes type coord root par loctype fixed prev nil next conséquent)
+         (par_exemple cat conj locut yes type coord root par loctype fixed prev nil next exemple))
+  |pas| ((non_pas_que conj locut yes type subord root pas loctype fixed prev non next que))
+  |particulier| ((en_particulier cat adv locut yes type quant root particulier loctype fixed prev en next nil))
+  |plus| ((|d'_autant_plus_que| cat conj locut yes type subord root plus loctype fixed prev autant next que)
+          (de_plus_en_plus cat adv locut yes type quant root plus1 loctype fixed prev de next en)
+          (de_plus_en_plus cat adv locut yes type quant root plus2 loctype fixed prev en next nil))
+  |plutôt| ((plutôt_que cat conj locut yes type subord root plutôt loctype fixed prev nil next que))
+  |pourquoi| ((|c'_est_pourquoi| cat conj locut yes type coord root pourquoi loctype fixed prev est next nil))
+  |principe| ((en_principe cat adv locut yes type quant root principe loctype fixed prev en next nil))
+  |que| ((a_moins_que cat conj locut yes type subord root que loctype fixed prev moins next nil)
+         (ainsi_que cat conj locut yes type subord root que loctype fixed prev ainsi next nil)
+         (aussi_que cat conj locut yes type subord root que loctype fixed prev aussi next nil)
+         (autant_que cat conj locut yes type subord root que loctype fixed prev autant next nil) 
+         (coûte_que_coûte cat adv locut yes root que loctype fixed prev coûte1 next coûte2)
+         (|d'_autant_moins_que| cat conj locut yes type subord root que loctype fixed prev moins next nil)
+         (|d'_autant_plus_que| cat conj locut yes type subord root que loctype fixed prev plus next nil)
+         (de_même_que cat conj locut yes type subord root que loctype fixed prev même next nil)
+         (en_tant_que cat prep type poli semtype compar locut yes root que loctype fixed prev tant next nil)
+         (excepté_que cat conj locut yes type subord root que loctype fixed prev excepté next nil)
+         (non_pas_que cat conj locut yes type subord root que loctype fixed prev pas next nil)
+         (plutôt_que cat conj locut yes type subord root que loctype fixed prev plutôt next nil))
+  |qu'| ((a_moins_que cat conj locut yes type subord root que loctype fixed prev moins next nil)
+         (ainsi_que cat conj locut yes type subord root que loctype fixed prev ainsi next nil)
+         (aussi_que cat conj locut yes type subord root que loctype fixed prev aussi next nil)
+         (autant_que cat conj locut yes type subord root que loctype fixed prev autant next nil) 
+         (coûte_que_coûte cat adv locut yes root que loctype fixed prev coûte1 next coûte2)
+         (|d'_autant_moins_que| cat conj locut yes type subord root que loctype fixed prev moins next nil)
+         (|d'_autant_plus_que| cat conj locut yes type subord root que loctype fixed prev plus next nil)
+         (de_même_que cat conj locut yes type subord root que loctype fixed prev même next nil)
+         (en_tant_que cat prep type poli semtype compar locut yes root que loctype fixed prev tant next nil)
+         (excepté_que cat conj locut yes type subord root que loctype fixed prev excepté next nil)
+         (non_pas_que cat conj locut yes type subord root que loctype fixed prev pas next nil)
+         (plutôt_que cat conj locut yes type subord root que loctype fixed prev plutôt next nil))
+  |revanche| ((en_revanche cat conj locut yes type coord root revanche loctype fixed prev en next nil))
+  |sauf| ((sauf_si cat conj locut yes type subord root sauf loctype fixed prev nil next si))
+  |sens| ((au_sens cat prep locut yes type poli root sens loctype fixed prev au next nil))
+  |service| ((hors_service cat adj locut yes root service loctype fixed prev hors next nil))
+  |si| ((comme_si cat conj locut yes type subord root si loctype fixed prev comme next nil)
+        (sauf_si cat conj locut yes type subord root si loctype fixed prev sauf next nil))
+  |tant| ((en_tant_que cat prep type poli semtype compar locut yes root tant loctype fixed prev en next que))
+
+))
+

@@ -1,0 +1,267 @@
+
+; **** the structure of word meaning info is as follows.
+   ;     1- (biglietto ££ticket)
+   ;     2- (sentire (££to-feel (thematic-grid () ..))) ; verb with a thematic grid
+   ;     3- (quindi (££to-cause (thematic-role ..)))    ; adverb assoc. with a thematic role
+   ;     4- (what (adj --q-art) (pron ££simple-event))  ; category-controlled ambiguity
+   ;     5- (che ((conj subord) --empty-conj))          ; category+type-controlled ambiguity
+   ;     6- (ragazzo ((noun (gender m)) ££boy))         ; category+other-feature-controlled ambiguity
+   ;     7- (dirigere ((££conduct ££direct-movie)))     ; Uncontrolled ambiguity
+   ;     8- (number ££number phone ££phone-number)      ; Dep-modified meaning
+; *** The last case applies, for instance to "telephone number"; though, in
+;     principle, it is compositional, it should be resolved as a reference to
+;     the concept ££phone-number. This may be implementation-dependent, since
+;     it is necessary to have the goal-concept of a query "give me the phone
+;     number of ...", which cannot be "number", because it's too general. But
+;     the phenomenon must be handled anyway in order to account for non-
+;     restrictive modifiers as "toy gun", which is not a gun.
+; *** Note that this could be applied also to verb particles (as "take away")
+;     but currently a different mechanism is used, i.e. the interpreter builds
+;     the lemma "take_away" by concatenating the verb and the particle
+
+;(setq *WORD-MEANING*
+;  (append *WORD-MEANING*
+;   '(
+   ; *** nouns ******
+     (addensamento ££clouds)
+     (anno ££year)
+     (aria ££air)
+     (aumento (££to-increase-1
+                (thematic-grid
+                     (noun-subj &increase-ag))))
+     (cappello ££hat)
+     (carattere ££type)
+     (centro £it-central-area)
+     (cielo ££sky)
+     (corrente ££sea-current)
+     (est ££east)
+     (giornata ££day)
+     (giorno ££day)
+     (immagine ££image)
+     (infiltrazione (££to-infiltrate-1
+                       (thematic-grid
+                           (noun-subj &infiltr-ag))))
+     (instabilità ££weather-status-unstable)
+     (maltempo ££bad-weather)
+     (mare ££sea)
+     (media £average)
+     (mese ££month)
+     (meteo ££meteo-news)
+     (nube ££clouds)
+     (nord £north)
+     (nuvola ££clouds)
+     (nuvolosità ££clouds)
+     (ovest ££west)
+     (penisola £Italy)
+     (pioggia ££rain)
+     (pressione ££pressure)
+     (previsione ££meteo-status-situation)
+     (precipitazione ££precipitation)
+     (ragazzo ((noun (gender m)) ££boy) ((noun (gender f)) ££girl))
+     (regione ££it-region)
+     (serata ££evening)
+     (settore ££it-geogr-area)
+     (spazio ££space)
+     (sud £south)
+     (tasso ££level)
+     (temperatura ££temperature)
+     (tempo ££weather-status)
+     (temporale ££storm)
+     (umidità ££humidity)
+     (valore ££property-value)
+     (variabilità £variabilità)
+     (versante ££geographic-area)
+   ; *** places **
+     (Francia £France)
+     (Spagna £Spain)
+     (Italia £Italy)     
+   ; *** weekdays **
+     (lunedì £monday)
+     (martedì £tuesday)
+     (mercoledì £wednesday)
+     (giovedì £thursday)
+     (venerdì £friday)
+     (sabato £saturday)
+     (domenica £sunday)
+     (weekend £weekend)
+   ; *** months **
+     (gennaio £january)
+     (febbraio £february)
+     (marzo £march)
+     (aprile £april)
+     (maggio £may)
+     (giugno £june)
+     (luglio £july)
+     (agosto £august)
+     (settembre £september)
+     (ottobre £october)
+     (novembre £november)
+     (dicembre £december)
+   ; *** greetings **
+     (bentornato £welcome)
+     (buongiorno £goodday)
+     (buonasera £goodevening)
+     (buonanotte £goodnight)
+   ; *** verbs ******
+     (aumentare (££to-increase-1
+                   (thematic-grid
+                     (verb-subj &increase-ag))))
+     (interessare (££to-affect-1
+                    (thematic-grid
+                      (verb-subj &affecter)
+                      (verb-obj &affectee))))
+     (giungere (££to-arrive-1
+                (thematic-grid
+                  (verb-subj &arriver)
+                  (verb-indcompl-loc+from &arrive-origin)
+                  (verb-indobj &arrive-receiver))))
+     (essere (££situation
+                (thematic-grid
+                  (verb-subj &situation-focus)
+                  (pron-rmod-loc+metaph @null)))
+             (££situation
+                (thematic-grid
+                  (verb-subj &property-evaluated)
+                  (verb-predcompl+subj &value-of-property)))
+            ; (££situation
+            ;    (thematic-grid
+            ;      (verb-subj &property-owner)
+            ;      (verb-predcompl+subj &propval-has-descr)))
+            ; (££status
+            ;    (thematic-grid
+            ;      (verb-subj &situation-focus)
+            ;      (verb-predcompl+subj &property-evaluation)))
+            ; (@dummy
+            ;    (thematic-grid
+            ;      (verb-subj &property-owner)
+            ;      (verb-predcompl+subj &property-evaluation)))
+             )
+     (fare_sì (££to-cause
+                (thematic-grid
+                  (verb-subj &causer)
+                  (verb-obj &causee))))
+     (disturbare (££to-disturb-1
+                (thematic-grid
+                  (verb-subj &disturber)
+                  (verb-obj &disturbee))))
+     (sentire (££to-feel-1
+                (thematic-grid
+                  (verb-subj &experiencer)
+                  (verb-obj &experienced-prop)
+                  (verb-predcompl+obj &exper-eval))))
+     (andare (££to-go-metaph			; *** va ad interessare
+                (thematic-grid
+                  (verb-subj &goer)
+                  (verb-obj &go-act))))
+     (avere (££to-have
+                (thematic-grid
+                  (verb-subj &have-owner)
+                  (verb-obj &have-owned))))
+     (piovere (££to-rain-1
+                (thematic-grid
+                  nil)))
+     (prevedere (££to-foresee-1
+                    (thematic-grid
+                      (verb-subj &foreseer)
+                      (verb-obj &foreseen))))
+     (vedere (££to-see-1
+                    (thematic-grid
+                      (verb-subj &seer)
+                      (verb-obj &seen))))
+     (mostrare (££to-show-1
+                (thematic-grid
+                  (verb-subj &show-ag)
+                  (verb-obj &showed)
+                  (verb-indobj &show-receiver))))
+     (potere ££modal-can)
+     (tornare ££meteo-status-situation)
+   ; *** adjectives *
+     (adriatico £adriatic)
+     (agitato £mare-agitato)
+     (alto £high)
+     (basso £low)
+     (buono £good)
+     (coperto £cloudy)
+     (debole £weak-precip)
+     (elevato £high)
+     (estremo -dummy-adj)
+     (instabile £unsettled)
+     (locale £local-phenomenon)
+     (mosso £mare-agitato)
+     (nostro -dummy-adj)
+     (meridionale £southern)
+     (occidentale £western)
+     (nord-occidentale £northwestern)
+     (nord-orientale £northeastern)
+     (nuvoloso £cloudy)
+     (orientale £eastern)
+     (perturbato £tempo-perturbato)
+     (secco £dry)
+     (sereno £clear-1)
+     (settentrionale £northern)
+     (sparso £nonlocal-phenomenon)
+     (sud-occidentale £southwestern)
+     (sud-orientale £southeastern)
+     (superiore £greater-than)
+     (temporalesco £stormy-type)
+     (tirrenico £tirrenic)
+     (ultimo £last)
+     (umido £humid)
+   ; *** adverbs ****
+     (ancora --time-anaphoric-continuation)
+     (quindi (££to-cause (thematic-role &causee)))
+     (oggi £today)
+     (domani £tomorrow)
+     (dopodomani £after-tomorrow)
+     (stasera £today-evening)
+     (molto --intensifier-adv)
+     (generalmente ££empty-conc)
+     (poi --time-anaphoric-after)
+   ; *** conjunctions ***
+     (e --and-operator)
+     (che ((conj subord) --neutral-conj))
+   ; *** prepositions ***
+     (a --a-relation)
+     (con --with-relation)
+     (di --di-relation)
+     (in --in-relation)
+     (per --for-relation)
+     (su --on-relation)
+     (a_partire_da &has-time-interv-start)
+     (nel_corso_di &interval-during)
+   ; *** others *****
+     (altro --deictic-specif-other)
+     (poco --q-little)
+     (il --def-art)
+     (quale (adj --q-art) (pron --q-pron))
+     (qualche --quantif-art)
+     (un --indef-art)
+     (I §speaker)
+     (my §speaker)
+     (si ((pron refl-impers) §generic-ag))
+   ; *** proper names *****
+     (Abruzzo £Abruzzo)
+     (Basilicata £Basilicata)
+     (Calabria £Calabria)
+     (Campania £Campania)
+     (Emilia £Emilia)
+     (Emilia-Romagna £EmiliaRomagna)
+     (Friuli £FriuliVG)
+     (Lazio £Lazio)
+     (Liguria £Liguria)
+     (Lombardia £Lombardia)
+     (Marche £Marche)
+     (Piemonte £Piemonte)
+     (Puglia £Puglia)
+     (Sardegna £Sardegna)
+     (Sicilia £Sicilia)
+     (Toscana £Toscana)
+     (Trentino £TrentinoAA)
+     (Umbria £Umbria)
+     (Veneto £Veneto)
+     (mare_di_Sardegna £Mare_di_Sardegna)
+     (Ionio £Ionio)
+;    )
+;  )
+;)
+

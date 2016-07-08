@@ -1,0 +1,9 @@
+; *** In this file verbs which, in presence of a reflexive pronoun
+; *** prefer an impersonal reading (ex. "si apprende")
+
+(setq *PREF-IMPERSONAL*
+  '(ACHETER APPLIQUER APPRENDRE COMPRENDRE CONSIDÉRER 
+    CORRESPONDRE ENTENDRE EXTIRPER INCORPORER MESURER
+    OPERÉR OBSERVER PARLER PASSER PENSER PIANTER
+    LOUER PRESCRIRE RÉPARTIR
+    EXCISER PARIER SIGNALER TRAITER))

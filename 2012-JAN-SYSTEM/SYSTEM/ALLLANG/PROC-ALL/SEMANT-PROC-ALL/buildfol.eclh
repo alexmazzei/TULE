@@ -1,0 +1,11 @@
+
+#ifdef ECL_DYNAMIC_VV
+static cl_object *VV;
+#else
+static cl_object VV[VM];
+#endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+static cl_object L1sem_to_fol_translation(cl_object );

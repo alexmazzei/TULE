@@ -1,0 +1,55 @@
+
+(in-package "USER")
+
+;;;(defvar *HOME-DIR* "/home/lesmo/TULE/DOWNL/2011-OCT-TULE/SYSTEM/")
+; !!! NOTE THE SLASH AFTER THE PATHNAME !!! IT IS REQUIRED !!!!!
+
+
+;;(defvar *HOME-DIR* "/Users/mazzei/lavori/parserLeo/gitDistr/2012-JAN-SYSTEM/SYSTEM/")
+(defvar *HOME-DIR* (directory-namestring (car (directory #P""))))
+
+(defvar *LISP-CHAR-SET-ID* 'UTF-8)
+; *** this encodes the character encoding scheme used by the Lisp machine
+
+; (defvar *CHAR-SET-ID* 'ISO-8859-1) ; Iso Latin 1: ISO/IEC 8859-1
+  (defvar *CHAR-SET-ID* 'UTF-8)
+; *** this encodes the character encoding scheme of the input data
+
+(defvar *SYSTEM-CONTEXT* 'tule)
+         ; other possible values are hops and hops-dial
+
+; *** the next few functions are needed for "build-file-name", which is in
+;     turn needed for loading all files, among which "utilities"
+
+(defun uconcat (&rest x)
+  (cond (x (format nil "~{~a~}" x)) ))
+
+(defun concat (&rest x) (identity (intern (string (apply #'uconcat x)))))
+
+(defun build-file-name (filen) (string (concat *HOME-DIR* filen)))
+
+(defun build-subdir-file-name (filen sub) (string (concat *HOME-DIR* sub filen)))
+
+;********* General utilities ***************************************
+(load (build-file-name "ALLLANG/PROC-ALL/utilities"))
+
+(defvar loadresult)	         ; for testing the correct loading of knowledge bases
+(defvar *LANGUAGE*)
+(defvar *TEMP*)
+
+     ; *** the three next variables hold the name of the lisp properties associated
+     ;     with the dictionary entries
+(defvar *MAIN-DICT*)
+(defvar *PROPER-DICT*)
+(defvar *SIGLE-DICT*)
+(defvar *PRINT-LEV*)
+(defvar *TREE-FORMAT*)	; may be "tut" or "avm"; set in main or in chunk-parser
+
+;********* The variable associated with the ontology cache *********************
+(defvar *ONTO-CACHE-FILE* (build-file-name "ALLLANG/KB-ALL/SEMANT-KB-ALL/onto-cache.dat"))
+
+(setq *LANGUAGE* 'italian)	
+(setq *MAIN-DICT* 'diz-gw)
+(setq *PROPER-DICT* 'diz-pn)
+(setq *SIGLE-DICT* 'diz-sig)
+(load "load-ita")

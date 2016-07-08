@@ -1,0 +1,17 @@
+(in-package "USER")
+
+; *** the preference data have the following structure:
+;     (PREP (NOUNUP NOUNDOWN)))
+;     this has to be read as follows:
+;     in case the linking preposition is PREP, then
+;     the attach of NOUNDOWN to NOUNUP is specially strong,
+;     (a pseudo-locution), so that NOUNDOWN rather than to an
+;     intervening NOUN
+; *** "decrizione di documento di item" (description of document
+;     of item): initial attachment: "documento di item"; final
+;     attachment: "description of item"
+(setq *PREFER-PP-ATTACH*
+ '(
+  )
+ )
+

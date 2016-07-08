@@ -1,0 +1,13 @@
+ PAolo 
+        (PAOLO NOUN PROPER M SING) 
+         (unambiguous word) 
+  ama 
+        (AMARE VERB IND PRES) 
+         ((DEFAULT-VERB-IMPER-IND)) 
+  Francesca 
+        (FRANCESCA NOUN PROPER F SING) 
+         ((PROPER-NOT-MULTIPLE)) 
+  . 
+        (#\. PUNCT) 
+         (unambiguous word) 
+ 

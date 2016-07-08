@@ -1,0 +1,9 @@
+(in-package "USER")
+
+(setq *NOUN-GOVERN*
+ '(
+   (entrave à)
+   (impact sur)
+   (stratégie sur)
+   ))
+
