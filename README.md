@@ -18,7 +18,8 @@
   TULE. Leonardo wanted to share TULE with everybody, so we distribute
   it with GPL license.
   
-  The directory docs contains a number of documents that we 
+  The directory "docs" contains a number of documents wrote by
+  Leonardo concerning various features of TULE.
 
 * Very small tutorial to use TULE:
 
