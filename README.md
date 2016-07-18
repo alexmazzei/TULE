@@ -24,16 +24,18 @@
 
   1. If you have Allegro common lisp installed, you can use it. As alternative, Install clisp.
 
-  2. The parser can be used in two differen ways: A. by calling
-     the"tule" file from CL interpreter. In this case you can call
-     "tule" lisp file from the CL prompt. In order to speed-up the
-     execution you can compile the lisp code by calling the
-     "compile-all" lisp file.
+  2. The parser can be used in two differen ways:
 
-     B. by using a socket based server. In this case you can use a
-      graphical viewer ("viewerTULETUT-locale-3001.jar", developed by
-      Livio Robaldo), or a very basical textual client
-      ("clientParser.lisp").
+     A. by calling the"tule" file from CL interpreter. In this case
+     you can call "tule" lisp file from the CL prompt. In order to
+     speed-up the execution you can compile the lisp code by calling
+     the "compile-all" lisp file.
+
+     B. by using a socket based server. In this case you need to call
+     the server ( "serverStarter.sh" ) and you can use a graphical
+     client ("java -jar viewerTULETUT-locale-3001.jar", developed by
+     Livio Robaldo), or in alternative a very basical textual client
+     ("clientParser.lisp").
 
    
 * NOTE: if you did not meet Leonardo, he was "the" free spirit. One
