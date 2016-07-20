@@ -8,7 +8,7 @@
   - A sentence splitter
   - A tokenizer
   - A morphological analyzer and disambiguator
-  - A PoS (part of speech) tagger
+  - A PoS (Part of Speech) tagger
   - A Dependecy rule-based syntactic parser
   - A semantic interpreter based on ontologies (experimental)
 
@@ -23,7 +23,9 @@
 
 * Very small tutorial to use TULE:
 
-  1. If you have Allegro common lisp installed, you can use it. As alternative, Install clisp.
+  1. You need a common lisp interpreter. TULE has originally been
+     developed in Allegro CL but a free and tested alternative is
+     clisp.
 
   2. The parser can be used in two differen ways:
 
@@ -40,7 +42,7 @@
 
    
 * NOTE: if you did not meet Leonardo, he was "the" free spirit. One
-  sentece that he liked to cite was: "Chi trova dolce la propria terra
+  sentence that he liked to cite was: "Chi trova dolce la propria terra
   è solo un tenero dilettante; chi trova dolci tutte le terre è un
   uomo che si è incamminato già su una buona via, ma è perfetto solo
   chi si sente straniero in ogni luogo" (Ugo di San Vittore)
